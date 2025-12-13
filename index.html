@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vishvaa Srinivasan – Online Fitness Coaching</title>
 
@@ -28,7 +28,7 @@
             serif: ["Playfair Display", "serif"],
           },
           boxShadow: {
-            soft: "0 4px 25px -4px rgba(17,24,39,0.06)",
+            soft: "0 6px 30px -8px rgba(17,24,39,0.08)",
           }
         }
       }
@@ -43,24 +43,25 @@
 
 <body class="bg-offwhite text-nearblack font-display antialiased">
 
-<!-- TOP BAR -->
+<!-- URGENCY BAR -->
 <div class="sticky top-0 z-50 bg-offwhite/95 backdrop-blur border-b border-gray-200">
-  <p class="text-center text-xs font-semibold tracking-wide uppercase py-3">
-    <span class="text-gold">Only 4 spots remaining this week</span>
+  <p class="text-center text-xs font-semibold tracking-wide uppercase py-3 text-gold">
+    Only 4 spots remaining this week
   </p>
 </div>
 
 <!-- HERO + FORM -->
-<section class="max-w-lg mx-auto px-6 py-10">
+<section class="max-w-lg mx-auto px-6 py-14 bg-offwhite">
   <h1 class="font-serif text-4xl leading-tight mb-4">
     Your precise path to the lifestyle you want.
   </h1>
-  <p class="text-coolgrey text-lg mb-8">
-    The private 90-day system for guaranteed consistency without guesswork.
+  <p class="text-coolgrey text-lg mb-10 max-w-sm">
+    The private, 90-day system for guaranteed consistency without the guesswork.
   </p>
 
   <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-soft">
-    <h3 class="text-xl font-bold mb-4">Apply for Coaching</h3>
+    <h3 class="text-xl font-bold mb-1">Apply for Coaching</h3>
+    <p class="text-sm text-gray-500 mb-5">Secure your spot.</p>
 
     <form
       action="https://docs.google.com/forms/d/e/1FAIpQLSeo8PiruNsNUfSHmWQKCCDsOlLKmk0AyhbnwREi6jHbGK6RrA/formResponse"
@@ -83,8 +84,10 @@
       </select>
 
       <button class="w-full bg-nearblack text-gold py-4 rounded-xl font-bold">
-        Secure My Spot Now
+        Secure My Spot Now →
       </button>
+
+      <p class="text-xs text-gray-500 text-center">🔒 100% Confidential & Secure</p>
     </form>
 
     <iframe name="hidden_iframe" style="display:none"
@@ -93,59 +96,30 @@
   </div>
 </section>
 
+<hr class="border-gray-200"/>
+
+<!-- SOCIAL PROOF -->
+<section class="max-w-lg mx-auto px-6 py-10 bg-white text-center">
+  <p class="text-sm text-gray-500">
+    Join <span class="text-nearblack font-semibold">120+</span> professionals transforming their physique
+  </p>
+</section>
+
+<hr class="border-gray-200"/>
+
 <!-- PROCESS -->
-<section class="max-w-lg mx-auto px-6 py-12">
-  <h2 class="text-3xl font-bold text-center mb-8">Coaching Process</h2>
-  <ul class="space-y-4 text-coolgrey">
-    <li>1. Personalized 1:1 Strategy Call</li>
-    <li>2. Premium App-Based Coaching</li>
-    <li>3. 24/7 Chat Support</li>
-    <li>4. Weekly Progress Review</li>
+<section class="max-w-lg mx-auto px-6 py-14 bg-offwhite">
+  <h2 class="text-3xl font-bold text-center mb-10">Our Signature Coaching Process</h2>
+
+  <ul class="space-y-6 text-coolgrey">
+    <li><strong>1.</strong> Personalized 1:1 Strategy Call</li>
+    <li><strong>2.</strong> Premium App-Based Coaching</li>
+    <li><strong>3.</strong> 24/7 Chat Support</li>
+    <li><strong>4.</strong> Weekly Progress Review</li>
   </ul>
 </section>
 
-<!-- PRICING -->
-<section class="max-w-lg mx-auto px-6 py-12 text-center">
-  <h2 class="text-3xl font-bold mb-4">Investment</h2>
-  <p class="line-through text-gray-400">₹19,499</p>
-  <p class="text-5xl font-black text-gold">₹14,999</p>
-  <p class="text-sm text-coolgrey mt-2">12-Week Transformation · One-time payment</p>
-</section>
+<hr class="border-gray-200"/>
 
-<!-- TESTIMONIALS -->
-<section class="max-w-lg mx-auto px-6 py-12">
-  <h2 class="text-3xl font-bold text-center mb-10">Client Transformations</h2>
-
-  <!-- SHREE RAM -->
-  <div class="bg-white rounded-2xl overflow-hidden border mb-8">
-    <div class="h-96 bg-cover bg-top"
-      style="background-image:url('https://drive.google.com/uc?export=view&id=1jnGS4qxm8siWXhZe-ryr_xjSSPNLLNOA')"></div>
-    <div class="p-5">
-      <h3 class="font-bold">Shree Ram</h3>
-      <p class="text-gold font-semibold">Lost 12 kg fat</p>
-    </div>
-  </div>
-
-  <!-- LAVANYA -->
-  <div class="bg-white rounded-2xl overflow-hidden border mb-8">
-    <div class="h-96 bg-cover bg-top"
-      style="background-image:url('https://drive.google.com/uc?export=view&id=1hXXdEbZmJcPre5V81wYNtRn5we9qxUbn')"></div>
-    <div class="p-5">
-      <h3 class="font-bold">Lavanya</h3>
-      <p class="text-gold font-semibold">Lost 7 kg fat</p>
-    </div>
-  </div>
-
-  <!-- TARUN -->
-  <div class="bg-white rounded-2xl overflow-hidden border">
-    <div class="h-96 bg-cover bg-top"
-      style="background-image:url('https://drive.google.com/uc?export=view&id=13m6cci0SPJ4iW6m3RlHFlRYHFgIhtngw')"></div>
-    <div class="p-5">
-      <h3 class="font-bold">Tarun</h3>
-      <p class="text-gold font-semibold">Gained 5 kg lean muscle</p>
-    </div>
-  </div>
-</section>
-
-</body>
-</html>
+<!-- INVESTMENT -->
+<section class="max-w-lg mx-auto px-6 py-14 bg-white text-center">
