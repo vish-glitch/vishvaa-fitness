@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vishvaa Srinivasan – Online Fitness Coaching</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishvaa Srinivasan — Online Coaching</title>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
   <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            gold: "#C9B37E",
-            offwhite: "#FAFAFA",
-            nearblack: "#111827",
-            coolgrey: "#4B5563",
+            gold: '#C9B37E',
+            ink: '#111827',
+            soft: '#FAFAFA',
+            muted: '#4B5563'
           },
           fontFamily: {
-            display: ["Inter", "sans-serif"],
-            serif: ["Playfair Display", "serif"],
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif']
           },
           boxShadow: {
-            soft: "0 4px 25px -4px rgba(17,24,39,0.06)",
+            card: '0 10px 40px -10px rgba(0,0,0,0.08)'
           }
         }
       }
@@ -36,88 +38,79 @@
   </script>
 
   <style>
-    body { min-height: max(884px, 100dvh); }
-    .bg-noise {
-      background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCryi-u9bdUaCtwqUB4xdy52zaUj6sFPXyAbUXCQKbhknOAxHw1dZUefGFNdcvxG0n5QrB4f6RpnIQy6WICeudofw4TpW_WtNcxOKCcBI6NcnazhNG3HmoFZ9Jf2NcAxHI0Ixg9sCzzCoWK1uMELiK_TPpvhZM1Dv38DB3ceaMl7bawJ0kLbXg10Bcqc791nrxx1sFXyflywCawQhQljmVcmJ_ShwBXUHMwWN6NxTWKWiOX90NoaD1t0jeo2CIOeqwQZLphhBfxtjU);
-      opacity: 0.03;
-    }
+    html { scroll-behavior: smooth; }
   </style>
 
-  <!-- Google Form redirect helper -->
   <script>
     let submitted = false;
   </script>
 </head>
 
-<body class="relative bg-offwhite font-display text-nearblack overflow-x-hidden antialiased">
-<div class="fixed inset-0 bg-noise pointer-events-none mix-blend-multiply"></div>
+<body class="bg-soft font-sans text-ink">
 
-<!-- ===== URGENCY BAR ===== -->
-<div class="sticky top-0 z-50 bg-offwhite/95 backdrop-blur border-b border-gray-200">
-  <div class="flex justify-center items-center p-3 text-xs font-semibold uppercase tracking-wide">
-    <span class="material-symbols-outlined text-gold mr-2">hourglass_top</span>
+<!-- ================= URGENCY BAR ================= -->
+<div class="sticky top-0 z-50 bg-soft/90 backdrop-blur border-b border-black/5">
+  <div class="max-w-md mx-auto text-xs font-semibold tracking-wide uppercase py-3 flex justify-center items-center gap-2">
+    <span class="material-symbols-outlined text-gold text-sm">hourglass_top</span>
     Only 4 spots remaining this week
   </div>
 </div>
 
-<!-- ===== HERO + FORM ===== -->
-<main class="relative z-10 max-w-lg mx-auto px-6 py-10">
-  <header class="flex items-center gap-2 mb-8">
-    <div class="size-8 rounded-full bg-white border shadow-sm flex items-center justify-center text-gold">
-      <span class="material-symbols-outlined">fitness_center</span>
+<!-- ================= HERO + FORM ================= -->
+<section id="apply" class="max-w-md mx-auto px-5 py-10">
+  <div class="bg-white rounded-3xl shadow-card p-6 relative">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-1 bg-gold rounded-b-full"></div>
+
+    <div class="flex items-center gap-2 mb-6">
+      <div class="w-8 h-8 rounded-full border flex items-center justify-center text-gold">
+        <span class="material-symbols-outlined text-sm">fitness_center</span>
+      </div>
+      <p class="font-semibold">Vishvaa Srinivasan</p>
     </div>
-    <h2 class="font-bold text-lg">Vishvaa Srinivasan</h2>
-  </header>
 
-  <h1 class="font-serif text-4xl leading-tight mb-4">
-    Your precise path to the lifestyle you want.
-  </h1>
-  <p class="text-coolgrey text-lg mb-10 max-w-sm">
-    The private, 90-day system for guaranteed consistency without the guesswork.
-  </p>
+    <h1 class="font-serif text-3xl leading-tight mb-3">
+      Your precise path to the lifestyle you want.
+    </h1>
+    <p class="text-muted mb-8">
+      The private, 90-day system for guaranteed consistency without the guesswork.
+    </p>
 
-  <!-- FORM CARD -->
-  <div class="relative bg-white border rounded-2xl p-6 shadow-soft">
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 h-1 w-20 bg-gold rounded-b-full"></div>
-
-    <h3 class="text-xl font-bold mt-2">Apply for Coaching</h3>
-    <p class="text-sm text-gray-500 mb-6">Secure your spot.</p>
-
+    <!-- FORM -->
     <form
       action="https://docs.google.com/forms/d/e/1FAIpQLSeo8PiruNsNUfSHmWQKCCDsOlLKmk0AyhbnwREi6jHbGK6RrA/formResponse"
       method="POST"
       target="hidden_iframe"
-      onsubmit="submitted=true;"
+      onsubmit="submitted=true"
       class="space-y-4">
 
       <input name="entry.168696330" required placeholder="Full Name"
-        class="w-full rounded-xl bg-gray-50 border px-4 py-3.5 focus:border-gold focus:ring-gold"/>
+        class="w-full rounded-xl border px-4 py-3 bg-soft focus:border-gold"/>
 
       <input name="entry.387434265" type="email" required placeholder="Email Address"
-        class="w-full rounded-xl bg-gray-50 border px-4 py-3.5"/>
+        class="w-full rounded-xl border px-4 py-3 bg-soft"/>
 
       <input name="entry.606317617" type="tel" required placeholder="Phone Number"
-        class="w-full rounded-xl bg-gray-50 border px-4 py-3.5"/>
+        class="w-full rounded-xl border px-4 py-3 bg-soft"/>
 
       <input name="entry.845392503" type="number" required placeholder="Age"
-        class="w-full rounded-xl bg-gray-50 border px-4 py-3.5"/>
+        class="w-full rounded-xl border px-4 py-3 bg-soft"/>
 
       <input name="entry.1241907741" required placeholder="Occupation"
-        class="w-full rounded-xl bg-gray-50 border px-4 py-3.5"/>
+        class="w-full rounded-xl border px-4 py-3 bg-soft"/>
 
       <select name="entry.1292567829" required
-        class="w-full rounded-xl bg-gray-50 border px-4 py-3.5">
+        class="w-full rounded-xl border px-4 py-3 bg-soft">
         <option value="" disabled selected>Experience in Fitness</option>
         <option value="0-3 years">0–3 years</option>
         <option value="3-5 years">3–5 years</option>
         <option value="5+ years">5+ years</option>
       </select>
 
-      <button class="w-full bg-nearblack text-gold py-4 rounded-xl font-bold">
+      <button class="w-full bg-ink text-gold py-4 rounded-xl font-bold">
         Secure My Spot Now →
       </button>
 
-      <p class="text-xs text-center text-gray-500 flex justify-center items-center gap-2">
+      <p class="text-xs text-center text-muted flex items-center justify-center gap-1">
         <span class="material-symbols-outlined text-gold text-sm">lock</span>
         100% Confidential & Secure
       </p>
@@ -127,81 +120,111 @@
       onload="if(submitted){window.location='thank-you.html';}">
     </iframe>
   </div>
-
-  <!-- SOCIAL PROOF -->
-  <div class="mt-12 pt-8 border-t text-center text-sm text-gray-500">
-    Join <span class="font-semibold text-nearblack">120+</span> professionals transforming their physique
-  </div>
-</main>
-
-<!-- ===== PROCESS ===== -->
-<section class="bg-white py-16">
-  <div class="max-w-md mx-auto px-6 text-center">
-    <h4 class="text-gold text-xs font-bold tracking-widest uppercase mb-4">The Method</h4>
-    <h2 class="text-3xl font-bold mb-6">Our Signature Coaching Process</h2>
-    <div class="w-16 h-1 bg-gold mx-auto rounded-full mb-10"></div>
-
-    <div class="space-y-8 text-left">
-      <p><strong>1.</strong> Personalized 1:1 Strategy Call</p>
-      <p><strong>2.</strong> Premium Dedicated App Coaching</p>
-      <p><strong>3.</strong> 24/7 Chat Support</p>
-      <p><strong>4.</strong> Weekly Progress Review</p>
-    </div>
-  </div>
 </section>
 
-<!-- ===== PRICING ===== -->
-<section class="bg-offwhite py-16 text-center">
-  <h2 class="text-3xl font-bold mb-2">Limited-Time Investment</h2>
-  <p class="line-through text-gray-400">₹19,499</p>
-  <p class="text-5xl font-black text-gold">₹14,999</p>
-  <p class="text-sm text-coolgrey mt-2">One-time payment · 12 weeks</p>
-</section>
+<!-- ================= PROCESS ================= -->
+<section class="max-w-md mx-auto px-5 py-14">
+  <div class="bg-white rounded-3xl shadow-card p-6">
+    <p class="text-xs tracking-widest uppercase text-gold font-semibold mb-2 text-center">The Method</p>
+    <h2 class="font-serif text-2xl text-center mb-6">Our Signature Coaching Process</h2>
+    <div class="w-16 h-1 bg-gold mx-auto mb-8 rounded-full"></div>
 
-<!-- ===== TESTIMONIALS ===== -->
-<section class="bg-white py-16">
-  <div class="max-w-md mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-12 font-serif">
-      Client Transformations & Validation
-    </h2>
-
-    <!-- Shree Ram -->
-    <div class="rounded-2xl overflow-hidden border mb-10">
-      <div class="h-[28rem] bg-cover bg-top"
-        style="background-image:url('https://drive.google.com/uc?export=view&id=1jnGS4qxm8siWXhZe-ryr_xjSSPNLLNOA')"></div>
-      <div class="p-6">
-        <h3 class="font-bold">Shree Ram · IT Professional</h3>
-        <p class="text-gold font-semibold">Lost 12 kg fat</p>
+    <div class="space-y-6">
+      <div>
+        <p class="text-gold font-bold text-lg">1.</p>
+        <p class="font-semibold">Personalized 1:1 Strategy Call</p>
+        <p class="text-sm text-muted">Customized plan based on your goals and physiology.</p>
       </div>
-    </div>
 
-    <!-- Lavanya -->
-    <div class="rounded-2xl overflow-hidden border mb-10">
-      <div class="h-[28rem] bg-cover bg-top"
-        style="background-image:url('https://drive.google.com/uc?export=view&id=1hXXdEbZmJcPre5V81wYNtRn5we9qxUbn')"></div>
-      <div class="p-6">
-        <h3 class="font-bold">Lavanya · Home Maker</h3>
-        <p class="text-gold font-semibold">Lost 7 kg fat</p>
+      <div>
+        <p class="text-gold font-bold text-lg">2.</p>
+        <p class="font-semibold">Premium Dedicated App Coaching</p>
+        <p class="text-sm text-muted">Workouts and diet tracked inside a private app.</p>
       </div>
-    </div>
 
-    <!-- Tarun -->
-    <div class="rounded-2xl overflow-hidden border">
-      <div class="h-[28rem] bg-cover bg-top"
-        style="background-image:url('https://drive.google.com/uc?export=view&id=13m6cci0SPJ4iW6m3RlHFlRYHFgIhtngw')"></div>
-      <div class="p-6">
-        <h3 class="font-bold">Tarun · College Student</h3>
-        <p class="text-gold font-semibold">Gained 5 kg lean muscle</p>
+      <div>
+        <p class="text-gold font-bold text-lg">3.</p>
+        <p class="font-semibold">24/7 Chat Support</p>
+        <p class="text-sm text-muted">Direct access to clear doubts anytime.</p>
+      </div>
+
+      <div>
+        <p class="text-gold font-bold text-lg">4.</p>
+        <p class="font-semibold">Weekly Progress Review</p>
+        <p class="text-sm text-muted">Data-driven adjustments every week.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== STICKY CTA ===== -->
-<div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t z-50 p-4">
-  <button class="w-full bg-nearblack text-gold py-4 rounded-xl font-bold">
+<!-- ================= PRICING ================= -->
+<section class="max-w-md mx-auto px-5 py-14">
+  <div class="bg-ink text-white rounded-3xl shadow-card overflow-hidden">
+    <div class="p-6 text-center">
+      <h2 class="font-serif text-2xl mb-1">Limited-Time Investment</h2>
+      <p class="text-sm opacity-80 mb-6">Secure your transformation today</p>
+
+      <p class="line-through opacity-60">₹19,499</p>
+      <p class="text-4xl font-black text-gold mb-2">₹14,999</p>
+      <p class="text-sm opacity-80 mb-6">One-time payment · 12 Weeks</p>
+
+      <a href="#apply" class="block bg-white text-ink font-bold py-3 rounded-xl">
+        Secure Your Spot →
+      </a>
+    </div>
+
+    <div class="bg-white text-ink p-6">
+      <p class="font-semibold mb-2">Our Assurance: 14-Day Guarantee</p>
+      <p class="text-sm text-muted">
+        If you don’t feel the difference in the first 14 days, get a full refund.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="max-w-md mx-auto px-5 py-14">
+  <h2 class="font-serif text-2xl text-center mb-3">Client Transformations & Validation</h2>
+  <p class="text-sm text-muted text-center mb-10">
+    Real results from real people who trusted the process.
+  </p>
+
+  <!-- Shree Ram -->
+  <div class="bg-white rounded-3xl shadow-card overflow-hidden mb-8">
+    <img src="https://drive.google.com/uc?export=view&id=1jnGS4qxm8siWXhZe-ryr_xjSSPNLLNOA" class="w-full h-80 object-cover">
+    <div class="p-5">
+      <p class="italic font-serif mb-2">“Lost fat, rebuilt confidence.”</p>
+      <p class="font-semibold">Shree Ram · IT Professional</p>
+      <p class="text-gold font-semibold">Lost 12 kg fat</p>
+    </div>
+  </div>
+
+  <!-- Lavanya -->
+  <div class="bg-white rounded-3xl shadow-card overflow-hidden mb-8">
+    <img src="https://drive.google.com/uc?export=view&id=1hXXdEbZmJcPre5V81wYNtRn5we9qxUbn" class="w-full h-80 object-cover">
+    <div class="p-5">
+      <p class="italic font-serif mb-2">“Consistency finally became easy.”</p>
+      <p class="font-semibold">Lavanya · Home Maker</p>
+      <p class="text-gold font-semibold">Lost 7 kg fat</p>
+    </div>
+  </div>
+
+  <!-- Tarun -->
+  <div class="bg-white rounded-3xl shadow-card overflow-hidden">
+    <img src="https://drive.google.com/uc?export=view&id=13m6cci0SPJ4iW6m3RlHFlRYHFgIhtngw" class="w-full h-80 object-cover">
+    <div class="p-5">
+      <p class="italic font-serif mb-2">“Gained muscle, built discipline.”</p>
+      <p class="font-semibold">Tarun · College Student</p>
+      <p class="text-gold font-semibold">Gained 5 kg lean muscle</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STICKY CTA ================= -->
+<div class="fixed bottom-0 left-0 right-0 bg-white border-t z-50 p-4">
+  <a href="#apply" class="block bg-ink text-gold text-center py-4 rounded-xl font-bold">
     Claim Your Discounted Spot →
-  </button>
+  </a>
 </div>
 
 </body>
